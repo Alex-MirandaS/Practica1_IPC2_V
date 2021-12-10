@@ -11,8 +11,9 @@ let verificarDatos = ()=>{
     const usuario= document.getElementById('usuario').value;
     const password= document.getElementById('password').value;
     const passwordConfirm= document.getElementById('passwordConfirm').value;
-
-if(password == passwordConfirm){
+    if(usuario === "" || password === "" || passwordConfirm === ""){
+        console.log('ERROR: Hay campos vacios');
+    }else if(password == passwordConfirm){
     console.log('Usuario Creado con Ëxito');
     console.log('Usuario:'+usuario);
     console.log('Password:'+password);

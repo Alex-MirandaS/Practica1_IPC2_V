@@ -8,9 +8,17 @@ let login = ()=>{
 
 
 let verificarLogin = ()=>{
-    const usuario= document.getElementById('usuario').value;
-    const password= document.getElementById('password').value;
-    console.log('Usuario:' +usuario +' Password: ' + password);
+
+  const usuario= document.getElementById('usuario').value;
+  const password= document.getElementById('password').value;
+  if(usuario === "" || password === ""){
+    console.log('ERROR: Hay campos vacios');
+}else{
+  console.log('Usuario:' +usuario);
+  console.log('Password: ' + password);
+}
+
+
     //ultimaOperacion.innerHTML = `  ${mensaje}`;
 };
 
